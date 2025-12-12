@@ -27,6 +27,7 @@ type Platform struct {
 	URL             string           `json:"url"`
 	Versions        []int            `json:"versions"`
 	Websites        []int            `json:"websites"`
+	PlatformType    int              `json:"platform_type"`
 }
 
 //go:generate stringer -type=PlatformCategory
