@@ -60,6 +60,7 @@ type Game struct {
 	VersionTitle          string       `json:"version_title"`
 	Videos                []int        `json:"videos"`
 	Websites              []int        `json:"websites"`
+	GameType              int          `json:"game_type"`
 }
 
 // GameCategory specifies a type of game content.
