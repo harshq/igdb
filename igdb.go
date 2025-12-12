@@ -143,7 +143,6 @@ func (c *Client) request(end endpoint, opts ...Option) (*http.Request, error) {
 
 	req.Header.Add("client-id", c.clientID)
 	req.Header.Add("Authorization", "Bearer "+c.token)
-	req.Header.Add("x-user-agent", "HenrySarabia/igdb")
 	req.Header.Add("Accept", "application/json")
 
 	return req, nil
